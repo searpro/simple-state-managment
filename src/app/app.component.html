@@ -1,0 +1,8 @@
+<hello name="{{ name | async }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+
+<div *ngIf="complexObject | async as obj"> <!-- Put the async pipe and you have it. -->
+  <div *ngFor="let prod of obj['products']">  <!--  not working if accessed normally -->
+    <b>{{ prod.title }}</b>
+  </div>
+</div>
