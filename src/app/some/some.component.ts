@@ -25,7 +25,7 @@ appName: any;
         { title: 'Laerdal' },
         {
           title: this.text,
-          meta: ['outside', 'UNITED STATES', 'England'],
+          meta: ['Ireland', 'United States', 'Denmark'],
         },
         { title: 'American Academy of Pediatrics' },
         { title: 'Canadian Paediatric Society' },

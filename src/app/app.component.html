@@ -4,5 +4,7 @@
 <div *ngIf="complexObject | async as obj"> <!-- Put the async pipe and you have it. -->
   <div *ngFor="let prod of obj['products']">  <!--  not working if accessed normally -->
     <b>{{ prod.title }}</b>
+    <p *ngIf="prod.meta"><small>tags:</small>
+      <span style="margin-left:20px;" *ngFor="let meta of prod.meta">{{ meta }}</span> </p>
   </div>
 </div>
